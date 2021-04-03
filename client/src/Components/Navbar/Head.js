@@ -58,7 +58,7 @@ const Head = () => {
 
               <li class="nav-item dropdown">
                 <span class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  User
+                 {localStorage.name}
             </span>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
@@ -71,8 +71,8 @@ const Head = () => {
                   <li>
                     <Link class="dropdown-item" to={`/`}>
                       <Button variant="contained"
-                        
-                        color="secondary"
+
+
                         onClick={Exit}>
                         Logout
                    </Button>
